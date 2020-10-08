@@ -1,12 +1,12 @@
 <h1>Plans</h1>
 
-
 <div class="background">
   <div class="container">
     <div class="panel pricing-table">
-
+        
+   <% @plans.each do |plan| %>
+    <div class='<%=plan.plan_id %>'>
       <div class="pricing-plan">
-        <% @plans.each do |plan| %>
         <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
         <h2 class="pricing-header"> <%= link_to plan.name, plan_path(plan) %> </h2>
         <ul class="pricing-features">
@@ -17,9 +17,7 @@
         <a href="#/" class="pricing-button">Sign up</a>
         <% end  %>
       </div>
-
-
-
+   </div>
     </div>
   </div>
 </div>
