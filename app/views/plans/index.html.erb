@@ -1,0 +1,6 @@
+<h1>Plans</h1>
+
+<% @plans.each do |plan| %>
+<h3> <%= link_to plan.name, plan_path(plan) %></h3>
+<h4> <%= plan.price %></h4>
+<% end  %>
