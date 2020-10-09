@@ -9,12 +9,8 @@
       <div class="pricing-plan">
         <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class='<%=plan.name %>'>
         <h2 class="pricing-header"> <%= link_to plan.name, plan_path(plan) %> </h2>
-        <ul class="pricing-features">
-          <li class="pricing-features-item">Entry SaaS</li>
-          <li class="pricing-features-item">The SaaS you know</li>
-        </ul>
         <span class="pricing-price"> <%= plan.price %> </span>
-        <a href="#/" class="pricing-button">Sign up</a>
+        <a href="#/" class="pricing-button">SaaS Me</a>
       </div>
    </div>
   <% end  %>
